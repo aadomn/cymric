@@ -1,29 +1,11 @@
+#include <string.h>
+#include "config.h"
+#include "utils.h"
 #if defined(MASKING)
 #include "aes.h"
 #else
 #include "aes_ffs.h"
 #endif 		/* defined(MASKING) */
-#include "string.h"
-#include "config.h"
-#include "utils.h"
-
-#define BLOCKBYTES 16
-#define KEYBYTES   16
-#define RKEYSWORDS 16*11 
-
-/* Doubling in GF(2^128) defined by x^128 + x^7 + x^2 + x + 1 */
-static inline void double_arr(
-	unsigned char       out[BLOCKBYTES],
-	const unsigned char in[BLOCKBYTES])
-{
-	unsigned char first_bit = -(in[0] >> 7);
-	for (unsigned int i = 0; i < BLOCKBYTES - 1; i++) {
-		out[i]  = in[i]     << 1;
-		out[i] |= in[i + 1] >> 7;
-	}
-	out[BLOCKBYTES - 1]   = in[BLOCKBYTES - 1] << 1;
-	out[BLOCKBYTES - 1]  ^= first_bit & 135;
-}
 
 /* Bitshift on a byte array */
 static inline void bitshift_bytes(
@@ -55,6 +37,7 @@ static inline void init_nonce(
 }
 
 #if !defined(PARALLEL)
+
 int ocb_shortinput_encrypt(
 	unsigned char*       ctext,
 	const unsigned char* key,
