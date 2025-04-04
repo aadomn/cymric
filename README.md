@@ -1,8 +1,8 @@
 # Implementations of Cymric authenticated encryption modes
 
-## Cymric
-Cymric is a family of two authenticated encryption modes, namely Cymric1 and Cymric2, finely tuned for very short inputs.
-While [the Manx modes](https://github.com/aadomn/manx_ae) (also named after a cat breed with short tail) already provide an efficient solution for this use case, Cymric adds an extra block cipher call to achieve beyond-birthday-bound (BBB) security.
+## Cymric overview
+Cymric is a family of two authenticated encryption (AE) modes, namely Cymric1 and Cymric2, finely tuned for very short inputs.
+While [the Manx modes](https://github.com/aadomn/manx_ae) (also named after a cat breed with short tails) already provide an efficient solution for this use case, Cymric adds an extra block cipher call to achieve beyond-birthday-bound (BBB) security.
 See the table below for a very simple comparison between the two schemes (where $n$ refers to the block size of the underlying block cipher).
 
 | AE modes   | BC calls | Keys  | Security bits |
