@@ -15,7 +15,7 @@ More specifically, Cymric1 achieves n-bit security but further limit the restric
 | AE modes   | Security bits |            Restrictions on inputs               |
 | :--------: | :-----------: | ------------------------------------------------|
 | Cymric1    |      $n$      | $\|N\| + \|A\| < n$ and $\|M\| + \|N\| \leq n$  |
-| Cymric2    |     $2n$/3$   | $\|N\| + \|A\| < n$ and $\|M\| \leq n$          |
+| Cymric2    |     $2n/3$    | $\|N\| + \|A\| < n$ and $\|M\| \leq n$          |
 
 For more details, see the paper Cymric: Short-tailed but Mighty by Wonseok Choi, Yeongmin Lee, Kazuhiko Minematsu, Yusuke Naito and myself.
 
