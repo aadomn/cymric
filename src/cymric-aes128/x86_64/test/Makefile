@@ -1,7 +1,7 @@
 TARGET = main
 
 CC     = gcc
-CFLAGS = -Wall -Wextra -Wstrict-prototypes -march=native
+CFLAGS = -Wall -Wextra -Wstrict-prototypes -Werror -march=native
 
 LINKER = gcc
 LFLAGS = $(CFLAGS) -lm
