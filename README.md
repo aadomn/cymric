@@ -1,4 +1,4 @@
-# Implementations of Cymric authenticated encryption modes
+# Implementations of the Cymric authenticated encryption modes
 
 ## Cymric overview
 Cymric is a family of two authenticated encryption (AE) modes, namely Cymric1 and Cymric2, finely tuned for very short inputs.
