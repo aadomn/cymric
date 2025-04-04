@@ -7,7 +7,7 @@ See the table below for a very simple comparison between the two schemes (where 
 
 | AE modes   | BC calls | Keys  | Security bits |
 | :--------: | :------: | :---: | :-----------: |
-| Manx       |     2    |   1   |     $n$/2     |
+| Manx       |     2    |   1   |     $n/2$     |
 | Cymric     |     3    |   2   |      $n$      |
 
 More specifically, Cymric1 achieves n-bit security but further limit the restrictions on the inputs' length.
