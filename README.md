@@ -3,18 +3,19 @@
 ## Cymric
 Cymric is a family of two authenticated encryption modes, namely Cymric1 and Cymric2, finely tuned for very short inputs.
 While [the Manx modes](https://github.com/aadomn/manx_ae) (also named after a cat breed with short tail) already provide an efficient solution for this use case, Cymric adds an extra block cipher call to achieve beyond-birthday-bound (BBB) security.
+See the table below for a very simple comparison between the two schemes (where $n$ refers to the block size of the underlying block cipher).
 
 | AE modes   | BC calls | Keys  | Security bits |
 | :--------: | :------: | :---: | :-----------: |
-| Manx       |     2    |   1   |     $n/2$     |
+| Manx       |     2    |   1   |     $n$/2     |
 | Cymric     |     3    |   2   |      $n$      |
 
 More specifically, Cymric1 achieves n-bit security but further limit the restrictions on the inputs' length.
 
-| AE modes   | Security bits |                            Restrictions on inputs                               |
-| :--------: | :-----------: | --------------------------------------------------------------------------------|
-| Cymric1    |      $n$      | $\vert N \vert + \vert A \vert < n$ and $\vert M \vert + \vert N \vert \leq n$  |
-| Cymric2    |     $2n/3$    | $\vert N \vert + \vert A \vert < n$ and $\vert M \vert \leq n$                  |
+| AE modes   | Security bits |            Restrictions on inputs               |
+| :--------: | :-----------: | ------------------------------------------------|
+| Cymric1    |      $n$      | $\|N\| + \|A\| < n$ and $\|M\| + \|N\| \leq n$  |
+| Cymric2    |     2$n$/3    | $\|N\| + \|A\| < n$ and $\|M\| \leq n$          |
 
 For more details, see the paper Cymric: Short-tailed but Mighty by Wonseok Choi, Yeongmin Lee, Kazuhiko Minematsu, Yusuke Naito and myself.
 
