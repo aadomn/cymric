@@ -22,7 +22,7 @@ For more details, see the paper Cymric: Short-tailed but Mighty by Wonseok Choi,
 ## Cipher-agnostic implementations
 
 The Cymric implementations provided in this repository are cipher-agnostic in the sense that the internal functions related to the underlying block cipher (i.e. key expansion and block encryption) are passed as arguments rather than being hardcoded.
-This way, it is easy to instantiate Cymric with your favorite block cipher dynamically..
+This way, it is easy to instantiate Cymric with your favorite block cipher dynamically.
 
 ## Structure of the repository
 
