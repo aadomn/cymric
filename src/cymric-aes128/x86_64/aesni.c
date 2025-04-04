@@ -1,3 +1,4 @@
+#include "cymric.h"
 #include "aes.h"
 
 cipher_ctx_t aes_get_cipher_ctx(void) {
