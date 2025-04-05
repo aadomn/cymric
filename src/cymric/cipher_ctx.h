@@ -1,4 +1,3 @@
-/* cipher_ctx.h */
 #ifndef CIPHER_CTX_H
 #define CIPHER_CTX_H
 
