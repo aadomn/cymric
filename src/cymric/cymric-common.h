@@ -1,6 +1,14 @@
 #ifndef CYMRIC_COMMON_H
 #define CYMRIC_COMMON_H
 
+/**
+ * @brief Exclusive-or between two byte arrays for a given number of bytes.
+ * 
+ * @param a The output byte array
+ * @param b The first operand
+ * @param c The second operand
+ * @param len  The operands' length 
+ */
 static inline void xor_bytes(
     uint8_t*        a,
     const uint8_t*  b,
