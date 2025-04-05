@@ -1,4 +1,3 @@
-#include "cymric.h"
 #include "aes.h"
 
 cipher_ctx_t aes_get_cipher_ctx(void) {
@@ -29,7 +28,7 @@ static inline void keyschedule_roundfunc(__m128i *rkey, __m128i word)
 /**
  * Precalculate all AES-128 round keys from an input encryption key.
  */
-void aes128_kexp(void* roundkeys, const uint8_t key[KEYBYTES])
+void aes128_kexp(void* roundkeys, const uint8_t* key)
 {
   aes_roundkeys_t* rkeys = (aes_roundkeys_t*)roundkeys;
   __m128i rkey;
@@ -57,7 +56,7 @@ void aes128_kexp(void* roundkeys, const uint8_t key[KEYBYTES])
   rkeys->rk[10] = rkey;
 }
 
-void aes128_enc(unsigned char out[BLOCKBYTES], const unsigned char in[BLOCKBYTES], const void* roundkeys)
+void aes128_enc(unsigned char* out, const unsigned char* in, const void* roundkeys)
 {
   unsigned int i;
   __m128i state;
@@ -73,7 +72,7 @@ void aes128_enc(unsigned char out[BLOCKBYTES], const unsigned char in[BLOCKBYTES
   _mm_store_si128((__m128i*)out, state);
 }
 
-void aes128_dec(unsigned char out[BLOCKBYTES], const unsigned char in[BLOCKBYTES], const void* roundkeys)
+void aes128_dec(unsigned char* out, const unsigned char* in, const void* roundkeys)
 {
   unsigned int i;
   __m128i state;
