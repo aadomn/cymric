@@ -11,7 +11,7 @@
 /**
  * @brief Authenticated encryption using Cymric1.
  *
- * @param c The output ciphertext (should be at least 16-byte long)
+ * @param c The output ciphertext (should be at least TAGBYTES+mlen long)
  * @param clen The length of the ciphertext
  * @param k The encryption key
  * @param n The nonce
@@ -20,8 +20,8 @@
  * @param mlen The message length (in bytes)
  * @param a The additional data to authenticate
  * @param alen The additional data length (in bytes)
- * @param encrypt The block encryption function of the underlying block cipher
- * @param kexpand The block key expansion function of the underlying block cipher
+ * @param ctx The cipher context which contains the cipher-related functions
+ *      and the round keys' material
  * 
  * @return 0 if successfully executed, error code otherwise
  */
@@ -33,9 +33,9 @@ int cymric1_enc(uint8_t c[], size_t *clen,
         const cipher_ctx_t* ctx);
 
 /**
- * @brief Authenticated decryption using Manx1.
+ * @brief Authenticated decryption using Cymric1.
  *
- * @param p The output plaintext
+ * @param p The output plaintext (should be at least clen-TAGBYTES long)
  * @param plen The length of the plaintext
  * @param k The encryption key
  * @param n The nonce
@@ -44,9 +44,8 @@ int cymric1_enc(uint8_t c[], size_t *clen,
  * @param clen The ciphertext length (in bytes)
  * @param a The additional data
  * @param alen The additional data length (in bytes)
- * @param encrypt The block encryption function of the underlying block cipher
- * @param decrypt The block decryption function of the underlying block cipher
- * @param kexpand The key expansion function of the underlying block cipher
+ * @param ctx The cipher context which contains the cipher-related functions
+ *      and the round keys' material
  * 
  * @return 0 if successfully executed, error code otherwise
  */
@@ -60,7 +59,7 @@ int cymric1_dec(uint8_t p[], size_t *plen,
 /**
  * @brief Authenticated encryption using Cymric2.
  *
- * @param c The output ciphertext
+ * @param c The output ciphertext (should be at least TAGBYTES+mlen long)
  * @param clen The length of the ciphertext
  * @param k The encryption key
  * @param n The nonce
@@ -69,8 +68,8 @@ int cymric1_dec(uint8_t p[], size_t *plen,
  * @param mlen The message length (in bytes)
  * @param a The additional data to authenticate
  * @param alen The additional data length (in bytes)
- * @param encrypt The block encryption function of the underlying block cipher
- * @param kexpand The block key expansion function of the underlying block cipher
+ * @param ctx The cipher context which contains the cipher-related functions
+ *      and the round keys' material
  * 
  * @return 0 if successfully executed, error code otherwise
  */
@@ -82,9 +81,9 @@ int cymric2_enc(uint8_t c[], size_t *clen,
         const cipher_ctx_t* ctx);
 
 /**
- * @brief Authenticated decryption using Manx2.
+ * @brief Authenticated decryption using Cymric2.
  *
- * @param p The output plaintext
+ * @param p The output plaintext (should be at least clen-TAGBYTES long)
  * @param plen The length of the plaintext
  * @param k The encryption key
  * @param n The nonce
@@ -93,8 +92,8 @@ int cymric2_enc(uint8_t c[], size_t *clen,
  * @param clen The ciphertext length (in bytes)
  * @param a The additional data
  * @param alen The additional data length (in bytes)
- * @param encrypt The block encryption function of the underlying block cipher
- * @param kexpand The key expansion function of the underlying block cipher
+ * @param ctx The cipher context which contains the cipher-related functions
+ *      and the round keys' material
  * 
  * @return 0 if successfully executed, error code otherwise
  */
