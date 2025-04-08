@@ -2,7 +2,7 @@
 #define AES_H_
 
 #include <stdint.h>
-#include "../cipher_ctx.h"
+#include "cipher_ctx.h"
 
 #define BLOCKBYTES 16
 #define KEYBYTES   16

@@ -1,7 +1,7 @@
 #ifndef LEA128_H_
 #define LEA128_H_
 
-#include "../cipher_ctx.h"
+#include "cipher_ctx.h"
 
 cipher_ctx_t lea128_get_cipher_ctx(void);
 
