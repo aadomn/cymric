@@ -42,7 +42,7 @@ cymric
 │   ├───armv7m
 │   └───avr8
 │   
-├───manx-lea128
+├───cymric-lea128
 │   ├───armv7m
 │   └───avr8
 ```
