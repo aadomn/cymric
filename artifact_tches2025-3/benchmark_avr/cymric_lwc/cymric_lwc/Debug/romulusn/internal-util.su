@@ -1,0 +1,2 @@
+../romulusn/internal-util.c:25:5:romulus_aead_check_tag	10	static
+../romulusn/internal-util.c:47:6:romulus_aead_clean	2	static

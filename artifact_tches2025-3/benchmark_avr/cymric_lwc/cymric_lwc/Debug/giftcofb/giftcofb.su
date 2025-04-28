@@ -1,0 +1,3 @@
+../giftcofb/giftcofb.c:67:5:giftcofb_crypt	380	static
+../giftcofb/giftcofb.c:160:5:giftcofb_encrypt	17	static
+../giftcofb/giftcofb.c:173:5:giftcofb_decrypt	19	static

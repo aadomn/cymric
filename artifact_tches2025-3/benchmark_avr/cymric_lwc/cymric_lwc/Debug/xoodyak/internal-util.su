@@ -1,0 +1,2 @@
+../xoodyak/internal-util.c:25:5:xoodyak_aead_check_tag	10	static
+../xoodyak/internal-util.c:47:6:xoodyak_aead_clean	2	static

@@ -1,0 +1,55 @@
+{
+ "cymric1": [
+	"encrypt_data",
+	"encrypt",
+	"expand_key",
+	"sbox",
+	"sbox02",
+	"cymric1_enc"
+ ],
+ "cymric2": [
+	"encrypt_data",
+	"encrypt",
+	"expand_key",
+	"sbox",
+	"sbox02",
+	"cymric2_enc"
+ ],
+ "xocb": [
+	"encrypt_data",
+	"encrypt",
+	"expand_key",
+	"sbox",
+	"sbox02",
+	"xocb_shortinput_encrypt"
+ ],
+ "aes-gcm-siv": [
+	"encrypt_data",
+	"encrypt",
+	"expand_key",
+	"sbox",
+	"sbox02",
+	"last4_gf128",
+	"gcm_ghash_mult_tbl",
+	"gcmsiv_shortinput_encrypt"
+ ],
+ "ocb": [
+	"encrypt_data",
+	"encrypt",
+	"expand_key",
+	"sbox",
+	"sbox02",
+	"ocb_shortinput_encrypt"
+ ],
+ "gcm": [
+	"encrypt_data",
+	"encrypt",
+	"expand_key",
+	"sbox",
+	"sbox02",
+	"last4_gf128",
+	"gcm_ghash_gen_tbl",
+	"gcm_ghash_mult_tbl",
+	"gcm_shortinput_encrypt"
+ ]
+}

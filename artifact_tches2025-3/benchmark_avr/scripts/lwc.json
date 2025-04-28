@@ -1,0 +1,70 @@
+{
+ "lea-cymric1": [
+	"lea128_encrypt",
+	"lea128_kexpand",
+	"cymric1_enc"
+ ],
+ "lea-cymric1*": [
+	"lea128_encrypt",
+	"cymric1_enc"
+ ],
+ "lea-cymric2": [
+	"lea128_encrypt",
+	"lea128_kexpand",
+	"cymric2_enc"
+ ],
+ "lea-cymric2*": [
+	"lea128_encrypt",
+	"cymric2_enc"
+ ],
+ "gift-cymric1": [
+	"gift128_encrypt",
+	"gift128_kexpand",
+	"cymric1_enc"
+ ],
+ "gift-cymric1*": [
+	"gift128_encrypt",
+	"cymric1_enc"
+ ],
+ "gift-cymric2": [
+	"gift128_encrypt",
+	"gift128_kexpand",
+	"cymric2_enc"
+ ],
+ "gift-cymric2*": [
+	"gift128_encrypt",
+	"cymric2_enc"
+ ],
+ "ascon_aead": [
+	"ascon_aead_encrypt",
+	"ascon_adata",
+	"ascon_encrypt",
+	"P"
+ ],
+ "xoodyak": [
+	"xoodyak_aead_encrypt",
+	"xoodoo_permute",
+	"xoodyak_absorb.constprop.0"
+ ],
+ "romulus-n": [
+	"romulus_schedule_init",
+	"romulus_update_counter",
+	"romulus_rho_short",
+	"skinny_plus_init_without_tk1",
+	"romulus_generate_tag",
+	"romulus_n_aead_encrypt",
+	"romulus_rho",
+	"romulus_n_process_ad.part.0.constprop.0",
+	"skinny_plus_encrypt_tk_full"
+ ],
+ "photon-beetle": [
+	"photon_beetle_process_ad.constprop.1",
+	"photon256_permute",
+	"photon_beetle_128_aead_encrypt"
+ ],
+ "gift-cofb": [
+	"giftcofb_crypt",
+	"gift128_encrypt",
+	"gift128_kexpand"
+ ]
+}

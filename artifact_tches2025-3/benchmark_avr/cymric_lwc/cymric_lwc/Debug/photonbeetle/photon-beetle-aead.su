@@ -1,0 +1,6 @@
+../photonbeetle/photon-beetle-aead.c:50:13:photon_beetle_process_ad.constprop	18	static
+../photonbeetle/photon-beetle-aead.c:50:13:photon_beetle_process_ad.constprop	18	static
+../photonbeetle/photon-beetle-aead.c:209:5:photon_beetle_128_aead_encrypt	82	static
+../photonbeetle/photon-beetle-aead.c:245:5:photon_beetle_128_aead_decrypt	87	static
+../photonbeetle/photon-beetle-aead.c:283:5:photon_beetle_32_aead_encrypt	70	static
+../photonbeetle/photon-beetle-aead.c:319:5:photon_beetle_32_aead_decrypt	70	static

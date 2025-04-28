@@ -1,0 +1,3 @@
+../romulusn/romulus-n-aead.c:39:13:romulus_n_process_ad.part.0.constprop	38	static
+../romulusn/romulus-n-aead.c:201:5:romulus_n_aead_encrypt	87	static
+../romulusn/romulus-n-aead.c:229:5:romulus_n_aead_decrypt	88	static

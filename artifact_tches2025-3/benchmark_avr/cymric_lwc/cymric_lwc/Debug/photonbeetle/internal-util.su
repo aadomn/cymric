@@ -1,0 +1,2 @@
+../photonbeetle/internal-util.c:25:5:aead_check_tag	10	static
+../photonbeetle/internal-util.c:47:6:aead_clean	2	static

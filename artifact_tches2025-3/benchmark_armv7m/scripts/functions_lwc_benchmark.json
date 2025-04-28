@@ -1,0 +1,13 @@
+[
+    ["cymric1_enc_lea128", "lea128_encrypt", 0],
+    ["cymric2_enc_lea128", "lea128_encrypt", 0],
+    ["cymric1_enc_gift128", "giftb128_encrypt", "gift128_keyschedule", 640],
+    ["cymric1_enc_gift128*", "giftb128_encrypt", 0],
+    ["cymric2_enc_gift128", "giftb128_encrypt", "gift128_keyschedule", 640],
+    ["cymric2_enc_gift128*", "giftb128_encrypt", 0],
+    ["ascon_aead_encrypt"],
+    ["xoodyak_encrypt"],
+    ["romulusn_encrypt"],
+    ["photon_beetle_128_aead_encrypt"],
+    ["giftcofb_encrypt"]
+]

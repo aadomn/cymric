@@ -1,0 +1,7 @@
+../romulusn/internal-romulus.c:26:6:romulus_update_counter	2	static
+../romulusn/internal-romulus.c:38:6:romulus_schedule_init	2	static
+../romulusn/internal-romulus.c:47:6:romulus_rho	4	static
+../romulusn/internal-romulus.c:59:6:romulus_rho_inverse	4	static
+../romulusn/internal-romulus.c:71:6:romulus_rho_short	10	static
+../romulusn/internal-romulus.c:85:6:romulus_rho_inverse_short	8	static
+../romulusn/internal-romulus.c:99:6:romulus_generate_tag	2	static

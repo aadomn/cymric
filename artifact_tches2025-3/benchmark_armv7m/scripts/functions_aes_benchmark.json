@@ -1,0 +1,8 @@
+[
+    ["cymric1_enc", "aes128_encrypt_sfs", "aes128_keyschedule_sfs_lut", 352],
+    ["cymric2_enc", "aes128_encrypt_sfs", "aes128_keyschedule_sfs_lut", 352],
+    ["xocb_shortinput_encrypt"],
+    ["gcmsiv_shortinput_encrypt"],
+    ["ocb_shortinput_encrypt"],
+    ["gcm_shortinput_encrypt"]
+]

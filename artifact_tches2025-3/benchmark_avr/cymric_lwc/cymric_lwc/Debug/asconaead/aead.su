@@ -1,0 +1,10 @@
+../asconaead/aead.c:13:18:ascon_loadkey	2	static
+../asconaead/aead.c:24:18:ascon_initaead	6	static
+../asconaead/aead.c:46:18:ascon_adata	34	static
+../asconaead/aead.c:77:18:ascon_encrypt	45	static
+../asconaead/aead.c:104:18:ascon_decrypt	45	static
+../asconaead/aead.c:131:18:ascon_final	6	static
+../asconaead/aead.c:149:18:ascon_gettag	2	static
+../asconaead/aead.c:154:17:ascon_verify	2	static
+../asconaead/aead.c:162:5:ascon_aead_encrypt	105	static
+../asconaead/aead.c:176:5:ascon_aead_decrypt	100	static

@@ -1,0 +1,25 @@
+; Copyright (C) 2003,2006 B. Poettering
+; 
+; This program is free software; you can redistribute and/or modify
+; it under the terms of the GNU General Public License as published by
+; the Free Software Foundation; either version 2 of the License, or
+; (at your option) any later version. Whenever you redistribute a copy
+; of this document, make sure to include the copyright and license
+; agreement without modification.
+;
+; This program is distributed in the hope that it will be useful,
+; but WITHOUT ANY WARRANTY; without even the implied warranty of
+; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+; GNU General Public License for more details.
+;
+; You should have received a copy of the GNU General Public License
+; along with this program; if not, write to the Free Software
+; Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+; The license text can be found here: http://www.gnu.org/licenses/gpl.txt
+
+;                http://point-at-infinity.org/avraes/
+;
+; This AES implementation was written in May 2003 by B. Poettering. It is 
+; published under the terms of the GNU General Public License. If you need 
+; AES code, but this license is unsuitable for your project, feel free to 
+; contact me: avraes AT point-at-infinity.org

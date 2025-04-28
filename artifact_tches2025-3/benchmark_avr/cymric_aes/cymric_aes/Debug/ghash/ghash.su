@@ -1,0 +1,2 @@
+../ghash/ghash.c:40:6:gcm_ghash_gen_tbl	27	static
+../ghash/ghash.c:68:6:gcm_ghash_mult_tbl	36	static
