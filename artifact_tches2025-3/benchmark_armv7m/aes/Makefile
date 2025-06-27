@@ -7,7 +7,7 @@ OBJCOPY	= $(PREFIX)-objcopy
 OBJDUMP	= $(PREFIX)-objdump
 GDB		= $(PREFIX)-gdb
 
-OPENCM3DIR = ../libopencm3
+OPENCM3DIR = ../../../libopencm3
 ARMNONEEABIDIR = /usr/arm-none-eabi
 STM32DIR = ../stm32f4
 

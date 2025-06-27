@@ -30,15 +30,26 @@ benchmark_armv7m
 │   └───Makefile
 ```
 
+## libopencm3 submodule
+This repository uses [libopencm3](https://github.com/libopencm3/libopencm3) as a submodule, pinned to commit for reproducibility.
+
+To clone with submodules:
+```
+git clone --recursive https://github.com/aadomn/cymric/git
+```
+
+Or if already cloned:
+```
+git submodule update --init --recursive
+```
+
+And run `make TARGETS='stm32f4` inside the `libopencm3` directory.
+
 ## Prerequisites
 ### Software
 - `arm-gnu-toolchain` (the results reported in the paper were obtained using the version 14.2.1)
 
-- [`libopencm3`](https://github.com/libopencm3/libopencm3). If not already available on your system, you can simply run the following steps in this folder:
-```
-git clone https://github.com/libopencm3/libopencm3
 make TARGETS='stm32/f4'
-```
 
 - [`st-link`](https://github.com/stlink-org/stlink) to flash the binaries
 
@@ -49,7 +60,7 @@ make TARGETS='stm32/f4'
 
 ## Benchmarking
 ### Build process
-Both makefiles in `aes` and `lwc` assume that the `libopencm3` directory is located at the root of this folder (i.e. `cymric_artifact/benchmark_armv7m`).
+Both makefiles in `aes` and `lwc` assume that the `libopencm3` directory is located at the root of this github project (i.e. `../artifact_tches2025`).
 If not, it is necessary modify `OPENCM3DIR` accordingly.
 Similarly, make sure that the `ARMNONEEABIDIR` points to the right location on your system.
 
