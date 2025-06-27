@@ -14,7 +14,17 @@ benchmark_avr
 ## Prerequisites
 - [`Microchip Studio`](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio) (we used the version 7.0.2594)
 
-- `avr-gnu-toolchain` (the results reported in the paper were obtained using the version 14.1.0)
+- `avr-gnu-toolchain` (the results reported in the paper were obtained using the version 14.1.0 available [here](https://github.com/ZakKemble/avr-gcc-build/releases/tag/v14.1.0-1))
+
+If your Microchip Studio installation does not support this toolchain yet, follow the steps [here](https://onlinedocs.microchip.com/oxy/GUID-D79ACEBE-41BD-43EF-8E1B-9462847AE13E-en-US-10/GUID-C5C2150B-22B2-4DD9-8355-5DA3D1286248.html):
+> Scan for Build Tools – scan the environment path and list the language tools installed on the computer.
+>
+> Add – manually add the tool to the list by entering the path to the directory containing the tool executable(s), i.e., base directory. Typically, this is the bin subdirectory in the tool installation directory.
+>
+> If you have more than one version of a compiler available, select one from the list.
+>
+> To change the path of a tool, enter the new path or browse for it.
+
 
 - `python3` for the script which extract code sizes
 
