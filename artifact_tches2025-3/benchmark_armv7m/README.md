@@ -60,7 +60,7 @@ make TARGETS='stm32/f4'
 
 ## Benchmarking
 ### Build process
-Both makefiles in `aes` and `lwc` assume that the `libopencm3` directory is located at the root of this github project (i.e. `../artifact_tches2025`).
+Both makefiles in `aes` and `lwc` assume that the `libopencm3` directory is located at the root of this folder (i.e. `artifact_tches2025-3/benchmark_armv7m`).
 If not, it is necessary modify `OPENCM3DIR` accordingly.
 Similarly, make sure that the `ARMNONEEABIDIR` points to the right location on your system.
 
