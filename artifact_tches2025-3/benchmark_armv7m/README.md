@@ -75,6 +75,8 @@ From the `scripts` folder run
 for the AES results and
 `python3 memory_analyzer.py ../lwc/firmware_m4.elf --functions_file functions_lwc_benchmark.json`
 for the LWC results.
+> [!WARNING]  
+> Note that the script `get_stack_usage.py` has been specifically written for the specific stack pointer operations used in this repository. Therefore, it may produce inaccurate results when used with code that manipulates the stack through other methods (e.g. jump instructions or stack pointer modifications via other registers).
 
 ## License
 By default the code in this repository is under CC0 license. However, some implementations considered for benchmarking purposes are taken from other proejcts and hence might be under other licenses. If so, a folder-specific LICENSE file will be included.
