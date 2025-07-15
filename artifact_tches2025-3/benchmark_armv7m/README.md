@@ -43,13 +43,11 @@ Or if already cloned:
 git submodule update --init --recursive
 ```
 
-And run `make TARGETS='stm32f4` inside the `libopencm3` directory.
+And run `make TARGETS='stm32f4'` inside the `libopencm3` directory.
 
 ## Prerequisites
 ### Software
 - `arm-gnu-toolchain` (the results reported in the paper were obtained using the version 14.2.1)
-
-make TARGETS='stm32/f4'
 
 - [`st-link`](https://github.com/stlink-org/stlink) to flash the binaries
 
