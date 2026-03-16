@@ -17,7 +17,7 @@ More specifically, Cymric1 achieves n-bit security but further limits the restri
 | Cymric1    |      $n$      | $\|N\| + \|A\| < n$ and $\|M\| + \|N\| \leq n$  |
 | Cymric2    |     $2n/3$    | $\|N\| + \|A\| < n$ and $\|M\| \leq n$          |
 
-For more details, see the paper Cymric: Short-tailed but Mighty by Wonseok Choi, Yeongmin Lee, Kazuhiko Minematsu, Yusuke Naito and myself.
+For more details, see the paper [Cymric: Short-tailed but Mighty](https://tches.iacr.org/index.php/TCHES/article/view/12223) by Wonseok Choi, Yeongmin Lee, Kazuhiko Minematsu, Yusuke Naito and myself.
 
 ## Cipher-agnostic implementations
 
